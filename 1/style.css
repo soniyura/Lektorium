@@ -1,0 +1,99 @@
+.first-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-face .dot:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+.third-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-face .dot:nth-of-type(2) {
+    align-self: center;
+}
+
+.third-face .dot:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+.fourth-face, .sixth-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourth-face .column, .sixth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifth-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fifth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2) {
+    justify-content: center;
+}
+
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+[class$="face"] {
+    margin: 16px;
+    padding: 4px;
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+    border: 5px solid #000000;
+    border-radius: 20%;
+}
+
+.dot {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 4px;
+    background-color: #333;
+}
+
+.horizontal {
+    display: flex;
+}
+
+.vertikal, .vertikal2 {
+    display: flex;
+    justify-content: center
+}
+
+
